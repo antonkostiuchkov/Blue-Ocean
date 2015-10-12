@@ -1,0 +1,28 @@
+.training-item
+  text-align center
+  lost-column 1/7 7 0px
+
+  p
+    margin 20px 0
+
+.icon
+  background-color black
+  height 80px
+  width @height
+  border-radius 50%
+  margin 0 auto
+  transform scale(1)
+  transition all 200ms ease-in-out
+  cursor pointer
+
+  &:hover
+    transform scale(1.1)
+
+
+  svg, g, path, rect, circle
+    fill white
+    stroke none
+
+.is-showing
+  opacity 1
+  transform translateX(0px)

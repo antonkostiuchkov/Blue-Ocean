@@ -1,0 +1,100 @@
+footer
+  background-color black
+  color #a7a9ab
+  position fixed
+  z-index -2
+  bottom 0
+  width 100%
+
+.more-info
+  box-sizing border-box
+  lost-column 2/4
+  padding-right 60px
+
+  p
+    margin-top 80px
+
+  .social
+    padding 0 5px 0 5px
+
+
+    &:hover
+      svg path
+        transition all 150ms ease-in-out
+        fill lighten(#a7a9ab, 60%)
+
+
+  form
+    p
+      font-size 14px
+      margin 40px auto 20px
+
+    input, button
+      border none
+
+    input
+      height 40px
+      width 230px
+      margin-right 10px
+      padding 4px 4px 4px 15px
+      position relative
+      top 5px
+      color black
+
+    button
+      height 50px
+      padding 10px
+
+
+
+
+.links
+  lost-column 1/4
+  margin-bottom 60px
+
+  &:nth-last-of-type(2)
+    margin-right 0px
+
+
+  h4
+    font-size 25px
+    font-family 'Fira Sans', sans-serif
+    font-weight 700
+    margin 60px auto 20px
+
+  a
+    display block
+    font-size 14px
+    padding 10px 0
+    color #a7a9ab
+    transform translateX(0px)
+    transition all 150ms ease-in-out
+
+    &:hover
+      color white
+      transform translateX(5px)
+
+  hr
+    cursor pointer
+
+.rights
+  font-size 14px
+  color lighten(black, 30%)
+
+  p
+    display inline-block
+
+  a
+    color @color
+    transition all 150ms ease-in-out
+    margin 15px
+    display inline-block
+
+    &:hover
+      color white
+
+
+
+
+footer li
+  list-style none

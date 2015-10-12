@@ -1,0 +1,203 @@
+doctype html
+html(lang="en")
+	head
+		//- Basic Page Needs
+		meta(charset="utf-8")
+		title Blue Ocean
+		meta(name="description", content="Blue Ocean English Consultants: Revolutionalizing the language industry by providing its clients with the first full service English training center in Sao Paulo")
+		meta(name="author" content="")
+
+		//- Mobile Specific Metas
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Compatible', content='IE=edge')
+
+		//- Font
+
+		//- CSS
+		link(rel='stylesheet', href='main.css')
+
+		//- Favicon
+		link(rel="icon", type="image/png", href="img/favicon.png")
+
+	body
+		header
+			nav.navbar
+				.logo
+					a(href="#")
+						img(src="img/logo.svg", alt="")
+						h3 Blue Ocean
+
+				ul.navbar-links
+					li
+						a(href="#") About
+					li
+						a(href="#") Partnerships
+					li
+						a(href="#") Corporate Training
+					li
+						a(href="#") Contact
+					li
+						a(href="#") Sign In
+
+			.lead
+				h1 Keep <br/> Learning
+
+				p Um consultor da Blue Ocean esta sempre a espera para ajuda-lo com todas as suas necessidades Ingles.
+
+				button.cta(href="#") Browse Couses & Classes
+
+		section.dark.spotlight
+
+			.content
+
+				h3.section-name Spotlight
+
+				.posts
+
+					a(href="#").post.post-1
+						img(src="img/kindle.jpg", alt="Kindle")
+						.info
+							h4 Kindle Fire HD
+							p <span>Tenha 100% de presenca em suas aulas.</span> Recebera um Kindle Fire cada vez que voce completar 50 horas de aulas consecutivas, sem qualquer cancelamento.
+
+					a(href="#").post.post-2
+						img(src="img/brunch.jpg", alt="")
+						.info
+							h4 Brunch Americano
+							p <span>Mantenha alta frequencia de estudo.</span> Agendar e participar de 12 horas de aulas ou mais em um mes.
+					a(href="#").post.post-3
+						img(src="img/cinema.jpg", alt="")
+						.info
+							h4 Ingressos de cinema
+							p <span>Concentre suas horas de estudo.</span> Agendar e participar de no minimo 4 aulas de no minimo 2 horas de duracao cada, em um mes.
+
+					a(href="#").post.post-4
+						img(src="img/workshop.jpg", alt="")
+						.info
+							h4 Workshop em Ingles
+							p <span> How to clase deals & sway people.</span> Treinamento de ingles intensivo e dinamico por 9 horas com 10 Professores de Ingles.
+
+
+		section.explore
+			.content
+
+				h3.section-name Explore Our Trainings
+
+				.training-list
+
+					.training-item
+						.icon
+							include ../images/resume.svg
+						p CV Revision Service
+
+					.training-item
+						.icon
+							include ../images/presentation.svg
+						p Presentation Assistence
+
+					.training-item
+						.icon
+							include ../images/email.svg
+						p E-Mail and Reports
+
+					.training-item
+						.icon
+							include ../images/travel.svg
+						p Travel Preparation
+
+					.training-item
+						.icon
+							include ../images/interview.svg
+						p Interview Training
+
+					.training-item
+						.icon
+							include ../images/culture.svg
+						p Cross Cultural Assistance
+
+					.training-item
+						.icon
+							include ../images/negotiation.svg
+						p Negotiation Assistence
+
+
+		section.dark.full-time
+			.content
+
+				h2 Full-time <br/> Couses
+				p Make a career change with our 8–12 week, all-day, full-time programs.
+				button.cta(href="#") View Full-Time Courses
+				.globe
+					include ../images/globe.svg
+				.notebook
+					include ../images/notebook.svg
+				.pencil
+					include ../images/pencil.svg
+
+
+		footer
+			.content
+				.more-info
+					p Blue Ocean revolucionou o sector linguistico, fornecendo os seus clientes com o primeiro servico completo de Ingles dentro de um centro de treinamento em São Paulo.
+					a(href="#").social
+						include ../images/facebook.svg
+					a(href="#").social
+						include ../images/tweeter.svg
+					a(href="#").social
+						include ../images/linkedin.svg
+					a(href="#").social
+						include ../images/instagram.svg
+					a(href="#").social
+						include ../images/google-plus.svg
+					a(href="#").social
+						include ../images/youtube.svg
+
+					form
+						p Find out about upcoming programs and events in Sao Paulo
+						input(type="text" placeholder="Your Email")
+						button(type="submit") Get Updates
+
+				.links
+					h4 Company
+					hr
+					a(href="#") About
+					hr
+					a(href="#") Locations
+					hr
+					a(href="#") Blog
+					hr
+					a(href="#") Careers
+					hr
+					a(href="#") Contact
+					hr
+					a(href="#") FAQ
+					hr
+					a(href="#") Press
+
+				.links
+					h4 Community
+					hr
+					a(href="#") Become An Instructor
+					hr
+					a(href="#") Corporate Training Opportunities
+					hr
+					a(href="#") Fund Scholarship
+					hr
+					a(href="#") Looking for Talent?
+					hr
+					a(href="#") Develop 21st Century Credentials
+
+				hr
+
+				.rights
+					p © 2015 Blue Ocean. All rights reserved.
+					a(href="#") Regulatory Information
+					a(href="#") Terms
+					a(href="#") Privacy
+
+
+
+
+		script(src="js/jquery-2.1.4.min.js")
+		script(src="js/app.js")
+
