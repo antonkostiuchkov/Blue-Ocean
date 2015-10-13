@@ -1,6 +1,14 @@
 .training-item
   text-align center
   lost-column 1/7 7 0px
+  cursor pointer
+  opacity 0
+  transform translateX(30px)
+  transition all 400ms ease-in-out
+
+  &.is-showing
+    opacity 1
+    transform translateX(0px)
 
   p
     margin 20px 0
@@ -13,7 +21,6 @@
   margin 0 auto
   transform scale(1)
   transition all 200ms ease-in-out
-  cursor pointer
 
   &:hover
     transform scale(1.1)
@@ -23,6 +30,3 @@
     fill white
     stroke none
 
-.is-showing
-  opacity 1
-  transform translateX(0px)
