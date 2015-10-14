@@ -9,6 +9,8 @@ var gulp 					= require('gulp');
 		// imagemin    	= require('gulp-imagemin');
 		browserSync 	= require('browser-sync');
 		reload      	= browserSync.reload;
+		rucksack			= require('rucksack-css');
+		rupture			= require('rupture');
 
 		// typographic = require('typographic');
 		// nib = require('nib');
@@ -23,11 +25,12 @@ gulp.task('styles', function(){
 		csswring,
 		lost,
 		normalize,
-		autoprefixer
+		autoprefixer,
+		rucksack
 	];
 
 	return gulp.src('assets/styles/main.styl')
-		.pipe(stylus())
+		.pipe(stylus({use: rupture()}))
 		.pipe(postcss(processors))
 		.pipe(gulp.dest('./dist'))
 		.pipe(reload({stream:true}));

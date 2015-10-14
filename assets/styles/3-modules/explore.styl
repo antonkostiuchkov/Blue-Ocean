@@ -1,4 +1,5 @@
 .training-item
+  margin-top 30px
   text-align center
   lost-column 1/7 7 0px
   cursor pointer
@@ -10,8 +11,15 @@
     opacity 1
     transform translateX(0px)
 
+  +below(860px)
+    lost-column 1/4
+
+  +below(450px)
+    lost-column 1/2
+
   p
     margin 20px 0
+    font-size responsive 14px 18px
 
 .icon
   background-color black

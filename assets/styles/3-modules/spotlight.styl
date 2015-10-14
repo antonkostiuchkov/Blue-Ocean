@@ -1,47 +1,35 @@
-section
-  padding-bottom 80px
-  background-color white
-  overflow hidden
+.post
+  lost-column 1/4
+  background #fff
+  box-sizing border-box
+  border 1px solid #e1e1e1
+  transition all 200ms ease-in-out
+  height 450px
+  margin-top 30px
 
-.content
-  lost-center 980px
+  &:hover
+    background-color rgba(blue, 0.3)
+    color black
 
-.dark
-  background-color #ebebeb
+  +below(860px)
+    lost-column 1/2
 
-.section-name
-  font-family 'Fira Sans', sans-serif
-  font-weight 400
-  margin 60px auto
-  text-align center
-
-
-.posts
-  display flex
+  +below(450px)
+    lost-column 1/1
 
 
-  .post
-    background #fff
-    border 1px solid #e1e1e1
-    lost-column 1/4
-    transition all 200ms ease-in-out
+  img
+    width 100%
 
-    &:hover
-      background-color rgba(blue, 0.3)
-      color black
+  .info
+    padding 0 20px 20px 20px
 
-    img
-      width 100%
+    h4
+      font-family 'Fira Sans', sans-serif
+      margin 20px auto 20px
 
-    .info
-      padding 0 20px 20px 20px
+    p
+      font-size 15px
 
-      h4
-        font-family 'Fira Sans', sans-serif
-        margin 20px auto 20px
-
-      p
-        font-size 15px
-
-        span
-          font-weight bold
+      span
+        font-weight bold

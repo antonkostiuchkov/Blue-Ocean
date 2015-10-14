@@ -1,28 +1,67 @@
 .full-time
   margin-bottom 533px
 
+  +below(930px)
+    margin-bottom 590px
+
+  +below(780px)
+    margin-bottom 645px
+
+  +below(750px)
+    margin-bottom 560px
+
+  +below(610px)
+    margin-bottom 590px
+
+  +below(420px)
+    margin-bottom 650px
+
+  +below(368px)
+    margin-bottom 690px
+
+  +below(350px)
+    margin-bottom 720px
+
+
   .content
     position relative
+
+    +below(980px)
+      padding 0 20px
 
     p
       max-width 422px
       margin-bottom 30px
 
     h2
-      margin 60px auto 30px
+      max-width 300px
+      margin 60px 0 30px 0
+
+      +below(750px)
+        max-width 100%
+
 
     .globe
       position absolute
       top 120px
       left 483px
 
+      +below(530px)
+        display none
+
     .notebook
       position absolute
       top 90px
       left 717px
 
+      +below(770px)
+        display none
+
     .pencil
       position absolute
       top 60px
       left 694px
+
+      +below(750px)
+        display none
 
