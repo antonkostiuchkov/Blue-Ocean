@@ -39,7 +39,8 @@ $( document ).ready(function() {
         'z-index' : '-1'
       });
 
-    } else {
+    }
+    else {
       $('footer').css({
         'z-index' : '-2'
       });
