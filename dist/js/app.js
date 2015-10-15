@@ -8,8 +8,9 @@ $( document ).ready(function() {
         explorePosition = $('.explore').offset().top;
         windowHeight = $(window).height();
         fullTimePosition = $('.full-time').offset().top;
-        footer = $('footer');
-        footerPosition = footer.offset().top;
+        spotlight = $('.spotlight');
+        spotlightPosition = spotlight.offset().top;
+        headerImage = $('.header-image');
 
 
     // Landing training items
@@ -35,17 +36,15 @@ $( document ).ready(function() {
       $('.globe').css({'transform': 'translate('+ offset +'px, '+ Math.abs(offset * 1) +'px)'});
 
       $('.notebook').css({'transform': 'translate('+ Math.abs(offset) +'px, '+ Math.abs(offset * 0.1) +'px)'});
-      $('footer').css({
-        'z-index' : '-1'
-      });
 
+    }
+
+    if (scrolledY > spotlightPosition) {
+      headerImage.css({'display' : 'none'});
     }
     else {
-      $('footer').css({
-        'z-index' : '-2'
-      });
+      headerImage.css({'display' : 'block'});
     }
-
 
   });
 
